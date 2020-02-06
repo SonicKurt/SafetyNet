@@ -1,0 +1,143 @@
+html {
+    font-family: sans-serif;
+  }
+  .skip-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .skip-links a {
+    position: absolute;
+    float: left;
+    top: -3em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em 0.75em;
+    font-weight: bold;
+    z-index: 3;
+  }
+  .skip-links a:focus {
+    top: 0;
+  }
+  nav {
+    position: -webkit-sticky;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+  }
+  .sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    border-top: 0;
+  }
+  .logo {
+    float: left;
+    position: relative;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .menu {
+    float: none;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+  }
+  .menu ul li {
+    display: inline-block;
+  }
+  .menu ul li a {
+    color: #222022;
+    text-decoration: none;
+    padding: 0.7em 1em;
+    display: block;
+    line-height: 2em;
+    transition: all 0.2s ease;
+  }
+  .menu ul li a:hover {
+    background-color: #00487C;
+    color: whitesmoke;
+    /*transform: scale(1.15);
+    overflow: hidden;*/
+  }
+  .bg-div {
+    overflow: hidden;
+  }
+  
+  .menu ul ul {
+    width: 10.3em;
+    position: absolute;
+    background: lightgrey;
+    display: none;
+    color: #ffffff;
+  }
+  .menu ul ul li {
+    display: block;
+    background: #0069B5;
+    text-align: left;
+  }
+  .menu ul ul li a {
+    color: #ffffff;
+  }
+  .menu ul li:hover ul {
+    display: block;
+  }
+  .menu ul li i {
+    color: inherit;
+    padding-left: 5px;
+    padding-bottom: 5px;
+  }
+    
+  nav .menu-icon {
+    background-color: whitesmoke;
+    color: #222022;
+    font-size: 20px;
+    padding: 0.7em 1em;
+    line-height: 1.6em;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease;
+  }
+  
+  @media (max-width: 768px) {
+    nav .menu-icon {
+      display: block;
+      overflow: hidden;
+      float: left;
+    }
+    .logo {
+      padding-left: 10px;
+    }
+    .menu {
+      margin: 0;
+      overflow: hidden;
+      width: 100%;
+    }
+    .menu ul {
+      display: none;
+      position: static;
+      text-align: left;
+    }
+    .menu ul li {
+      display: block;
+      width: 100%;
+    }
+    .menu ul li a {
+      line-height: 1.7em;
+    }
+    .menu ul ul {
+      position: static;
+      width: 100%;
+    }
+  }
+  
