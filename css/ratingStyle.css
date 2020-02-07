@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* Home CSS Document */
+/* Authors: Kurt Campbell, Ashley Clingerman, Hanna Tilton */
+
+.wrapper {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+}
+p {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  color: #efedef;
+}
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 250px;
+  color: white;
+  text-align: center;
+}
+
+#showcase .bg-image {
+  position: absolute;
+  background: url('../img/ratings/ratings-banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+#showcase .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  z-index: -1;
+}
+
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap,
+#section-b .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* Section A */
+#section-a {
+  background-color: #efedef;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#section-a ul {
+  list-style: none;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0;
+}
+
+#section-a li {
+  margin-bottom: 1em;
+  background-color: #00487c;
+  color: white;
+  border-radius: 13px;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+#section-a .card-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#section-a .content-text {
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+}
+
+/* Section B */
+
+#section-b {
+  padding: 2em 1em 1em;
+  background: #efedef;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#section-b .card-list {
+  list-style: none;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding: 0;
+}
+
+#section-b .card-list li {
+  margin-bottom: 1em;
+  background-color: #00487c;
+  color: white;
+  border-radius: 13px;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+#section-b li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*#section-b li:hover {
+  background-color: #222022;
+}*/
+
+#section-b .factors ul {
+  list-style: square;
+  background: none;
+}
+
+#section-b .factors li {
+  background: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.moreInfo {
+  font-size: 12px;
+}
+
+.card img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  border-radius: 13px 13px;
+}
+
+.card-content {
+  padding: 1.5em;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmix(auto, 25em)) 1fr;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+  }
+  #section-a .content-text {
+    columns: 1;
+    column-gap: 2em;
+  }
+  .content-wrap,
+  #section-b ul {
+    grid-column: 2/4;
+  }
+
+  #section-b ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-b li {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  #section-a .content-text {
+    margin-left: 0;
+    margin-right: 0;
+    columns: 1;
+    column-gap: 2em;
+  }
+  #section-b ul li {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
