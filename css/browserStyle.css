@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Home CSS Document */
+/* Browser CSS Document */
 /* Authors: Kurt Campbell, Ashley Clingerman, Hanna Tilton */
 
 .wrapper {
@@ -32,7 +32,7 @@ p {
 
 #showcase .bg-image {
   position: absolute;
-  background: url('../img/home/banner.jpg');
+  background: url('../img/browser/browser-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +58,8 @@ p {
 
 #showcase .content-wrap,
 #section-a .content-wrap,
-#section-b .content-wrap {
+#section-b .content-wrap,
+#section-c .content-wrap {
   padding: 0 1.5em;
 }
 
@@ -98,20 +99,20 @@ p {
 /* Section B */
 
 #section-b {
-  padding: 2em 1em 1em;
-  background: #efedef;
-  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  background-color: #efedef;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
-#section-b ul {
+#section-b .card-list {
   list-style: none;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 0;
 }
 
-#section-b li {
+#section-b .card-list li {
   margin-bottom: 1em;
   background-color: #00487c;
   color: white;
@@ -119,17 +120,128 @@ p {
   box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
 }
 
-#section-b li a {
+#section-b .card-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#section-b .content-text {
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+}
+
+#section-b .factors ul {
+  list-style: square;
+  background: none;
+}
+
+#section-b .factors li {
+  background: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+/* Section C */
+#section-c {
+  background-color: #efedef;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#section-c ul {
+  list-style: none;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 0;
+}
+
+#section-c li {
+  margin-bottom: 1em;
+  background-color: #00487c;
+  color: white;
+  border-radius: 13px;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+#section-c .card-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#section-c .content-text {
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+}
+
+/* Section D */
+
+#section-d {
+  padding: 2em 1em 1em;
+  background: #efedef;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#section-d ul {
+  list-style: none;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding: 0;
+}
+
+#section-d li {
+  margin-bottom: 1em;
+  background-color: #00487c;
+  color: white;
+  border-radius: 13px;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+#section-d li a {
   color: white;
   text-decoration: none;
 }
 
-#section-b li:hover {
+#section-d li:hover {
   background-color: #222022;
 }
 
 .moreInfo {
   font-size: 12px;
+}
+
+/* Section E */
+
+#section-e {
+  padding: 2em 1em 1em;
+  background: #efedef;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#section-e ul {
+  list-style: none;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding: 0;
+}
+
+#section-e li {
+  margin-bottom: 1em;
+  background-color: #00487c;
+  color: white;
+  border-radius: 13px;
+  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
+}
+
+#section-e li a {
+  color: white;
+  text-decoration: none;
+}
+
+#section-e li:hover {
+  background-color: #222022;
 }
 
 .card img {
@@ -156,17 +268,42 @@ p {
     columns: 1;
     column-gap: 2em;
   }
+
+  #section-b .content-text {
+    columns: 1;
+    column-gap: 2em;
+  }
+
+  #section-c .content-text {
+    columns: 1;
+    column-gap: 2em;
+  }
+
   .content-wrap,
-  #section-b ul {
+  #section-d ul {
     grid-column: 2/4;
   }
 
-  #section-b ul {
+  #section-d ul {
     display: flex;
     justify-content: space-around;
   }
 
-  #section-b li {
+  #section-d li {
+    width: 40%;
+  }
+
+  .content-wrap,
+  #section-e ul {
+    grid-column: 2/4;
+  }
+
+  #section-e ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #section-e li {
     width: 40%;
   }
 }
@@ -178,7 +315,27 @@ p {
     columns: 1;
     column-gap: 2em;
   }
-  #section-b ul li {
+
+  #section-b .content-text {
+    margin-left: 0;
+    margin-right: 0;
+    columns: 1;
+    column-gap: 2em;
+  }
+
+  #section-c .content-text {
+    margin-left: 0;
+    margin-right: 0;
+    columns: 1;
+    column-gap: 2em;
+  }
+
+  #section-d ul li {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  #section-e ul li {
     margin-left: 3%;
     margin-right: 3%;
   }

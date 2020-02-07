@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Home CSS Document */
+/* Parental CSS Document */
 /* Authors: Kurt Campbell, Ashley Clingerman, Hanna Tilton */
 
 .wrapper {
@@ -124,9 +124,9 @@ p {
   text-decoration: none;
 }
 
-#section-b li:hover {
+/*#section-b li:hover {
   background-color: #222022;
-}
+}*/
 
 .moreInfo {
   font-size: 12px;
