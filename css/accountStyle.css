@@ -32,7 +32,7 @@ p {
 
 #showcase .bg-image {
   position: absolute;
-  background: url("../img/home/banner.jpg");
+  background: url('../img/account/account-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
