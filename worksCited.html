@@ -7,10 +7,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Router | SafetyNet</title>
+    <title>Works Cited | SafetyNet</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="stylesheet" href="./css/indexStyle.css" />
+    <link rel="stylesheet" href="./css/worksCitedStyle.css" />
     <link rel="stylesheet" href="./css/navStyle.css" />
     <link rel="stylesheet" href="./css/footerStyle.css" />
     <link
@@ -57,10 +57,11 @@
         <div class="overlay">
           <div class="bg-image"></div>
         </div>
-        <h1>SafetyNet</h1>
+        <h1>Works Cited</h1>
       </header>
 
       <main id="main">
+        <!-- Section A -->
         <section id="section-a" class="grid">
           <div class="content-wrap">
             <div class="content-text">
@@ -68,75 +69,57 @@
                 <li>
                   <div class="card">
                     <div class="card-content">
-                      <p id="main-content">
-                        One of the many concerns about browsing the web is
-                        security and privacy. Most people question on how to
-                        make the internet a safer experience for them. That’s
-                        where SafetyNet comes in. SafetyNet has all the
-                        information that you need to know on how to browse the
-                        web safely and know what content is appropriate for your
-                        children.
-                      </p>
+                      <div class="gdoc-canvas">
+                        <iframe
+                          src="https://docs.google.com/document/d/e/2PACX-1vRy_ZemKyyCUYmqhct168aTeuHo1X9Y3ShoqvSYhp_HnyQuJqkA-e2IUBC9uMMfS0pQw3T_X12wG_JW/pub?embedded=true"
+                          id="gdoc_canvas"
+                          frameborder="0"
+                          width="700px"
+                          height="500px"
+                        ></iframe>
+                      </div>
+                      <style>
+                        .gdoc-canvas {
+                          position: relative;
+                          padding-bottom: 75%;
+                          overflow: hidden;
+                          height: 0;
+                        }
+                        .gdoc-canvas iframe {
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          background: white !important;
+                          height: 100% !important;
+                          width: 100% !important;
+                        }
+
+                        @media (min-width: 760px) {
+                          .gdoc-canvas {
+                            min-height: 400px;
+                          }
+                        }
+                        /* iPhone 6/7/8 */
+                        @media (max-width: 375px) {
+                          .gdoc-canvas {
+                            min-height: 1000px;
+                            min-width: 300px;
+                          }
+                        }
+
+                        /* iPhone 5/SE */
+                        @media (max-width: 320px) {
+                          .gdoc-canvas {
+                            min-width: 200px;
+                          }
+                        }
+                      </style>
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-        </section>
-
-        <!-- Section B -->
-
-        <section id="section-b">
-          <div class="bg-image"></div>
-          <ul>
-            <li>
-              <a href="browser.html">
-                <div class="card">
-                  <img
-                    src="./img/home/browser-security.png"
-                    alt="Browser Security"
-                  />
-                  <div class="card-content">
-                    <h2 class="card-title">Browser Security</h2>
-                    <p>
-                      Securing your browser give you a safer experience for
-                      browsing the web
-                    </p>
-                    <p class="moreInfo">
-                      <i
-                        >For more information, visit the Browser Security
-                        page</i
-                      >
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="parental.html">
-                <div class="card">
-                  <img
-                    src="./img/home/parental-controls.jpg"
-                    alt="Parental Controls"
-                  />
-                  <div class="card-content">
-                    <h2 class="card-title">Parental Controls</h2>
-                    <p>
-                      Features that allow parents to restrict the access of
-                      content to their children.
-                    </p>
-                    <p class="moreInfo">
-                      <i
-                        >For more information, visit the Parental Controls
-                        page</i
-                      >
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
         </section>
       </main>
 
