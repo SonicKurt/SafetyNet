@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Parental CSS Document */
+/* Services CSS Document */
 /* Authors: Kurt Campbell, Ashley Clingerman, Hanna Tilton */
 
 .wrapper {
@@ -32,7 +32,7 @@ p {
 
 #showcase .bg-image {
   position: absolute;
-  background: url('../img/parental/parental-controls-banner.jpg');
+  background: url('../img/services/services-banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +113,7 @@ p {
 
 #section-b li {
   margin-bottom: 1em;
-  background-color: #00487c;
+  background-color: #003052;
   color: white;
   border-radius: 13px;
   box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
@@ -124,41 +124,8 @@ p {
   text-decoration: none;
 }
 
-/*#section-b li:hover {
+#section-b li:hover {
   background-color: #222022;
-}*/
-
-/* Section C */
-
-#section-c {
-  padding: 2em 1em 1em;
-  background: #efedef;
-  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-#section-c ul {
-  list-style: none;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
-  padding: 0;
-}
-
-#section-c li {
-  margin-bottom: 1em;
-  background-color: #00487c;
-  color: white;
-  border-radius: 13px;
-  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
-}
-
-#section-c ul ol li {
-  box-shadow: none;
-}
-
-#section-c li a {
-  color: white;
-  text-decoration: none;
 }
 
 .moreInfo {
@@ -189,7 +156,6 @@ p {
     columns: 1;
     column-gap: 2em;
   }
-
   .content-wrap,
   #section-b ul {
     grid-column: 2/4;
@@ -203,29 +169,6 @@ p {
   #section-b li {
     width: 40%;
   }
-
-  .content-wrap,
-  #section-c ul {
-    grid-column: 2/4;
-  }
-
-  #section-c ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #section-c li {
-    width: 40%;
-  }
-
-  #section-c ul ol {
-    display: inline-block;
-    justify-content: space-around;
-  }
-
-  #section-c ul ol li {
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
@@ -236,10 +179,6 @@ p {
     column-gap: 2em;
   }
   #section-b ul li {
-    margin-left: 3%;
-    margin-right: 3%;
-  }
-  #section-c ul li {
     margin-left: 3%;
     margin-right: 3%;
   }
