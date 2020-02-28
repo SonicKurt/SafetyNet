@@ -131,7 +131,7 @@ p {
 }
 
 #section-b .factors ul {
-  list-style: square;
+  list-style: disc;
   background: none;
 }
 
