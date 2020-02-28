@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Router | SafetyNet</title>
+    <title>Router Security | SafetyNet</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="./css/routerStyle.css" />
@@ -57,7 +57,7 @@
         <div class="overlay">
           <div class="bg-image"></div>
         </div>
-        <h1>Router</h1>
+        <h1>Router Security</h1>
       </header>
 
       <main id="main">
@@ -68,15 +68,48 @@
                 <li>
                   <div class="card">
                     <div class="card-content">
-                      <p id="main-content">
-                        One of the many concerns about browsing the web is
-                        security and privacy. Most people question on how to
-                        make the internet a safer experience for them. That’s
-                        where SafetyNet comes in. SafetyNet has all the
-                        information that you need to know on how to browse the
-                        web safely and know what content is appropriate for your
-                        children.
+                      <p id="main-content" class="moreInfo">
+                        <i
+                          >Note: This is generalize and the steps may vary from
+                          router to router.</i
+                        >
                       </p>
+                      <ul>
+                        <li>
+                          From a computer connected by ethernet (your computer
+                          is connected directly to your router via Ethernet
+                          cable), open your preferred web browser and type in
+                          "192.168.0.1" in the Address Bar and hit enter.
+                        </li>
+                        <li>Click on Wireless Setup</li>
+                        <li>
+                          To your left, click on the "Multiple SSID" link.
+                        </li>
+                        <li>
+                          Click the drop-down in step ONE and select a name from
+                          the list separate from the main network name, (this
+                          should be in the box)
+                        </li>
+                        <li>Enable the SSID Broadcast</li>
+                        <li>Set to Broadcast the SSID</li>
+                        <li>
+                          Either use the default SSID Name or create your own in
+                          all capital letters.
+                        </li>
+                        <li>Set the Separate Subnet to Enable.</li>
+                        <li>
+                          Enter the following:
+                          <br />
+                          <br />
+                          <ul>
+                            <li>DHCP Start Address: 10.10.50.2</li>
+                            <li>DHCP End Address: 10.10.50.254</li>
+                            <li>SSID Subnet Mask: 255.255.255.0</li>
+                            <li>Gateway Address: 10.10.50.1</li>
+                            <li>Click "APPLY"</li>
+                          </ul>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </li>
@@ -85,58 +118,34 @@
           </div>
         </section>
 
-        <!-- Section B -->
-
-        <section id="section-b">
-          <div class="bg-image"></div>
-          <ul>
-            <li>
-              <a href="browser.html">
-                <div class="card">
-                  <img
-                    src="./img/home/browser-security.png"
-                    alt="Browser Security"
-                  />
-                  <div class="card-content">
-                    <h2 class="card-title">Browser Security</h2>
-                    <p>
-                      Securing your browser give you a safer experience for
-                      browsing the web
-                    </p>
-                    <p class="moreInfo">
-                      <i
-                        >For more information, visit the Browser Security
-                        page</i
-                      >
-                    </p>
+        <section id="section-b" class="grid">
+          <div class="content-wrap">
+            <div class="content-text">
+              <ul>
+                <li>
+                  <div class="card">
+                    <div class="card-content">
+                      <h2 class="card-title">Parental Controls</h2>
+                      <p class="moreInfo">
+                        <i
+                          >Note: The setup of parental controls varies from
+                          router to router.</i
+                        >
+                      </p>
+                      <p>
+                        You can enable parental controls for a profile on your
+                        router to filter the content your child can access and
+                        enable a protective search on search engines. You can
+                        also setup active times so your children don’t end up
+                        staying up all night on the internet and limits how much
+                        time they spend on devices.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="parental.html">
-                <div class="card">
-                  <img
-                    src="./img/home/parental-controls.jpg"
-                    alt="Parental Controls"
-                  />
-                  <div class="card-content">
-                    <h2 class="card-title">Parental Controls</h2>
-                    <p>
-                      Features that allow parents to restrict the access of
-                      content to their children.
-                    </p>
-                    <p class="moreInfo">
-                      <i
-                        >For more information, visit the Parental Controls
-                        page</i
-                      >
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
       </main>
 
