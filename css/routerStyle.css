@@ -95,37 +95,61 @@ p {
   margin-right: 3.7%;
 }
 
-/* Section B */
+#section-a ul ul {
+  list-style: disc;
+}
 
+#section-a ul ul li {
+  box-shadow: none;
+}
+
+#section-a ul ul li ul {
+  list-style: inside;
+}
+
+/* Section B */
 #section-b {
-  padding: 2em 1em 1em;
-  background: #efedef;
-  box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  background-color: #efedef;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 #section-b ul {
   list-style: none;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  margin-left: 1%;
+  margin-right: 1%;
   padding: 0;
 }
 
 #section-b li {
   margin-bottom: 1em;
-  background-color: #003052;
+  background-color: #00487c;
   color: white;
   border-radius: 13px;
   box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.2);
 }
 
-#section-b li a {
-  color: white;
-  text-decoration: none;
+#section-b .card-content {
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-#section-b li:hover {
-  background-color: #222022;
+#section-b .content-text {
+  margin-left: 3.7%;
+  margin-right: 3.7%;
+}
+
+#section-b ul ul {
+  list-style: disc;
+}
+
+#section-b ul ul li {
+  box-shadow: none;
+}
+
+#section-b ul ul li ul {
+  list-style: inside;
 }
 
 .moreInfo {
@@ -156,18 +180,9 @@ p {
     columns: 1;
     column-gap: 2em;
   }
-  .content-wrap,
-  #section-b ul {
-    grid-column: 2/4;
-  }
-
-  #section-b ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #section-b li {
-    width: 40%;
+  #section-b .content-text {
+    columns: 1;
+    column-gap: 2em;
   }
 }
 
@@ -178,8 +193,10 @@ p {
     columns: 1;
     column-gap: 2em;
   }
-  #section-b ul li {
-    margin-left: 3%;
-    margin-right: 3%;
+  #section-b .content-text {
+    margin-left: 0;
+    margin-right: 0;
+    columns: 1;
+    column-gap: 2em;
   }
 }
